@@ -1,13 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
 .logo {
     height: 50px;
     margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 #stargazing-calendar {
@@ -19,50 +58,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-#home-icon {
-    height: 160px;
-    width: 155px;
-    margin-right: 40px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-h2 {
-    color: #333;
-}
-
-section#stargazing-calendar {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
 .collapsible {
     background-color: #333;
     color: white;
@@ -73,6 +68,9 @@ section#stargazing-calendar {
     text-align: left;
     outline: none;
     font-size: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .active, .collapsible:hover {
@@ -96,6 +94,10 @@ section#stargazing-calendar {
 
 .event h3 {
     margin-top: 0;
+}
+
+.event p{
+    font-family: Arial, sans-serif;
 }
 
 .event-image {
